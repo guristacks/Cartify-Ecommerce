@@ -5,7 +5,7 @@ This project focuses on delivering a clean UI, smooth user experience, and a con
 
 The design is built to simulate a real-world ecommerce experience with attractive sections, responsive design, and engaging interactions.
 
-**View Live Site** 🔗 https://your-live-link-here.com
+**View Live Site** 🔗 https://cartify-ecommerce-landing.vercel.app/
 
 ---
 
