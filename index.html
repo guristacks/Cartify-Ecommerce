@@ -45,7 +45,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- FONT - MONTSERRAT -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 
     <!-- CDN - REMIX ICON -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -54,30 +55,22 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
-    <!-- Performance: prevent layout shift -->
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-    </style>
-
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header role="banner">
+    <!-- HEADER -->
+    <header class="flex ac" role="banner">
         <div class="container">
 
-            <nav class="navbar flex ac">
+            <nav class="navbar flex ac sb">
+                <div class="ham">
+                    <i class="ri-menu-2-line ham"></i>
+                    <i class="ri-close-large-line close"></i>
+                </div>
                 <div class="nav-left">
                     <a href="/" class="logo">
-                        <img src="images/logo.png" alt="Cartify Logo">
+                        Cartify <br> Ecommerce
                     </a>
                 </div>
 
@@ -89,16 +82,10 @@
                 </ul>
 
                 <div class="nav-right flex ac">
-                    <button class="icon-btn">
-                        <i class="ri-search-line"></i>
-                    </button>
+                    <i class="ri-search-line"></i>
 
-                    <button class="icon-btn">
-                        <i class="ri-shopping-cart-2-line"></i>
-                        <span class="cart-count">2</span>
-                    </button>
-
-                    <a href="#" class="btn-primary">Login</a>
+                    <i class="ri-shopping-cart-2-line"></i>
+                    <span class="cart-count">0</span>
                 </div>
             </nav>
 
@@ -107,7 +94,15 @@
 
     <!-- Main Content -->
     <main role="main">
-        <section></section>
+
+        <section class="hero flex ac jc">
+            <div class="container">
+                <h1>Hello World</h1>
+                <p>My name is Guri Ghumaan</p>
+                <button>Click me</button>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
