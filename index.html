@@ -2,44 +2,130 @@
 <html lang="en">
 
 <head>
+    <!-- Basic -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- title -->
-    <title>Project</title>
+    <!-- Mobile Optimization -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <!-- favicon -->
-    <link rel="icon" type="image/png" href="images/nothing.jpeg">
+    <!-- Title -->
+    <title>Cartify – Modern Ecommerce Shopping Experience</title>
 
-    <!-- Poppins font -->
+    <!-- SEO -->
+    <meta name="description"
+        content="Cartify is a modern ecommerce platform offering a seamless shopping experience with premium products, fast checkout, and user-friendly design. Shop smarter with Cartify.">
+    <meta name="keywords"
+        content="Cartify, ecommerce website, online shopping, buy products online, modern ecommerce, shopping platform, fast checkout">
+    <meta name="author" content="Cartify">
+
+    <!-- Open Graph (Social Sharing) -->
+    <meta property="og:title" content="Cartify – Modern Ecommerce Shopping Experience">
+    <meta property="og:description"
+        content="Discover Cartify – a modern ecommerce platform designed for smooth shopping, fast checkout, and premium products.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://cartify-ecommerce-landing.vercel.app/images/preview.jpg">
+    <meta property="og:url" content="https://cartify-ecommerce-landing.vercel.app/">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cartify – Modern Ecommerce Shopping Experience">
+    <meta name="twitter:description"
+        content="Shop smarter with Cartify. Premium ecommerce experience with fast checkout and smooth UI.">
+    <meta name="twitter:image" content="https://cartify-ecommerce-landing.vercel.app/images/preview.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cartify-ecommerce-landing.vercel.app/">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-    <!-- FontAwesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT - MONTSERRAT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <!-- Remix Icon CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet"/>
+    <!-- CDN - REMIX ICON -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!-- Css -->
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Performance: prevent layout shift -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 
 </head>
 
 <body>
 
-    <header></header>
+    <!-- Header -->
+    <header role="banner">
+        <div class="container">
 
-    <section></section>
+            <nav class="navbar flex ac">
+                <div class="nav-left">
+                    <a href="/" class="logo">
+                        <img src="images/logo.png" alt="Cartify Logo">
+                    </a>
+                </div>
 
-    <footer></footer>
+                <ul class="nav-links flex ac">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                <div class="nav-right flex ac">
+                    <button class="icon-btn">
+                        <i class="ri-search-line"></i>
+                    </button>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+                    <button class="icon-btn">
+                        <i class="ri-shopping-cart-2-line"></i>
+                        <span class="cart-count">2</span>
+                    </button>
 
-    <script src="Js/script.js"></script>
+                    <a href="#" class="btn-primary">Login</a>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <section></section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo"></footer>
+
+    <!-- LENIS -->
+    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js" defer></script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script>
+
+    <!-- SCROLL TRIGGER -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script>
+
+    <!-- JS FILE -->
+    <script src="Js/script.js" defer></script>
 
 </body>
 
