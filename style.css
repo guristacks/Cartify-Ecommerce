@@ -70,6 +70,12 @@ i {
 span {
   display: inline-block;
 }
+.hide {
+  display: none;
+}
+.ham {
+  display: none;
+}
 section {
   user-select: none;
   min-height: 100vh;
@@ -128,6 +134,12 @@ header {
   font-weight: 400;
   line-height: 1;
   display: none;
+  color: #fff;
+}
+.close {
+  font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1;
   color: #fff;
 }
 .logo {
@@ -275,17 +287,58 @@ header {
   .navbar {
     text-align: center;
   }
-  .nav-links {
-    display: none;
+  .nav-right a {
+    font-weight: 400;
   }
   .ham {
     display: flex;
   }
-  .close {
-    display: none;
+  header {
+    background: #0000004d;
+    padding: 0px 15px;
+    border-radius: 10px;
+    width: 97%;
+    margin: auto;
+    box-shadow: var(--shadow);
+    top: 10px;
   }
-  .nav-right a {
-    font-weight: 400;
+  .nav-links {
+    background: #0000004d;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    padding: 50px 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--gap40);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    transform: translateY(-150%);
+  }
+  .nav-links li a {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+    color: #fff;
+  }
+  .nav-links li:hover {
+  background-color: unset;
+  box-shadow: unset;
+}
+  .nav-links li a:hover {
+    color: #ffffff;
+  }
+  .home-link {
+    background-color: unset;
+    backdrop-filter: unset;
+    box-shadow: unset;
+  }
+  .home-link a {
+    color: #ffffff !important;
   }
 
   /* HERO */
@@ -296,20 +349,61 @@ header {
 
 /* 📱 Large Mobile */
 @media (min-width: 481px) and (max-width: 767px) {
+  /* HEADER */
   .navbar {
     text-align: center;
   }
-  .nav-links {
-    display: none;
+  .nav-right a {
+    font-weight: 400;
   }
   .ham {
     display: flex;
   }
-  .close {
-    display: none;
+  header {
+    background: #0000004d;
+    padding: 0px 15px;
+    border-radius: 10px;
+    width: 97%;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    top: 10px;
   }
-  .nav-right a {
-    font-weight: 400;
+  .nav-links {
+    background: #ffffffba;
+    backdrop-filter: blur(10px);
+    padding: 50px 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--gap40);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+
+    transform: translateY(-150%);
+  }
+  .nav-links li a {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .nav-links li:hover {
+    background-color: unset;
+  }
+  .nav-links li a:hover {
+    color: #000;
+  }
+  .home-link {
+    background-color: unset;
+    backdrop-filter: unset;
+    box-shadow: unset;
+  }
+  .home-link a {
+    color: #000 !important;
   }
 
   /* HERO */
@@ -320,20 +414,61 @@ header {
 
 /* 📲 Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
+  /* HEADER */
   .navbar {
     text-align: center;
   }
-  .nav-links {
-    display: none;
+  .nav-right a {
+    font-weight: 400;
   }
   .ham {
     display: flex;
   }
-  .close {
-    display: none;
+  header {
+    background: #0000004d;
+    padding: 0px 15px;
+    border-radius: 10px;
+    width: 97%;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: var(--shadow);
+    top: 10px;
   }
-  .nav-right a {
-    font-weight: 400;
+  .nav-links {
+    background: #ffffffba;
+    backdrop-filter: blur(10px);
+    padding: 50px 0;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    flex-direction: column;
+    gap: var(--gap40);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+
+    transform: translateY(-150%);
+  }
+  .nav-links li a {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+  }
+  .nav-links li:hover {
+    background-color: unset;
+  }
+  .nav-links li a:hover {
+    color: #000;
+  }
+  .home-link {
+    background-color: unset;
+    backdrop-filter: unset;
+    box-shadow: unset;
+  }
+  .home-link a {
+    color: #000 !important;
   }
 
   /* HERO */
