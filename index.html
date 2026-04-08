@@ -44,15 +44,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- FONT - MONTSERRAT -->
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-
     <!-- CDN - REMIX ICON -->
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" /> -->
 
     <!-- CSS -->
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -65,27 +62,23 @@
 
             <nav class="navbar flex ac sb">
                 <div class="ham">
-                    <i class="ri-menu-2-line ham"></i>
-                    <i class="ri-close-large-line close"></i>
+                    Menu
                 </div>
                 <div class="nav-left">
-                    <a href="/" class="logo">
-                        Cartify <br> Ecommerce
+                    <a href="index.html" class="logo">
+                        Cartify
                     </a>
                 </div>
 
                 <ul class="nav-links flex ac">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="home-link"><a href="#">Home</a></li>
+                    <li class="about-link"><a href="#">About</a></li>
+                    <li class="shop-link"><a href="#">Shop</a></li>
+                    <li class="contact-link"><a href="#">Contact</a></li>
                 </ul>
 
                 <div class="nav-right flex ac">
-                    <i class="ri-search-line"></i>
-
-                    <i class="ri-shopping-cart-2-line"></i>
-                    <span class="cart-count">0</span>
+                    <a href="#">Cart</a>
                 </div>
             </nav>
 
@@ -96,10 +89,32 @@
     <main role="main">
 
         <section class="hero flex ac jc">
-            <div class="container">
-                <h1>Hello World</h1>
-                <p>My name is Guri Ghumaan</p>
-                <button>Click me</button>
+            <div class="hero-images">
+
+                <picture class="hero-img active">
+                    <source media="(max-width: 480px)" srcset="Images/Hero/hero-1-phn.webp">
+                    <img src="Images/Hero/hero-1-desk.webp" alt="">
+                </picture>
+
+                <picture class="hero-img">
+                    <source media="(max-width: 480px)" srcset="Images/Hero/hero-2-phn.webp">
+                    <img src="Images/Hero/hero-2-desk.webp" alt="">
+                </picture>
+
+                <picture class="hero-img">
+                    <source media="(max-width: 480px)" srcset="Images/Hero/hero-3-phn.webp">
+                    <img src="Images/Hero/hero-3-desk.webp" alt="">
+                </picture>
+
+                <picture class="hero-img">
+                    <source media="(max-width: 480px)" srcset="Images/Hero/hero-4-phn.webp">
+                    <img src="Images/Hero/hero-4-desk.jpg" alt="">
+                </picture>
+
+            </div>
+            <div class="hero-content">
+                <span id="count"><em>01</em></span>
+                <button id="nextBtn"><em>Next</em></button>
             </div>
         </section>
 
@@ -109,15 +124,15 @@
     <footer role="contentinfo"></footer>
 
     <!-- LENIS -->
-    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js" defer></script>
+    <!-- <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js" defer></script> -->
 
     <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script> -->
 
     <!-- SCROLL TRIGGER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script> -->
 
     <!-- JS FILE -->
     <script src="Js/script.js" defer></script>
