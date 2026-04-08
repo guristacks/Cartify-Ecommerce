@@ -269,9 +269,10 @@ header {
   .nav-right a {
     font-weight: 400;
   }
+
   /* HERO */
-  .hero-img img {
-    object-position: center;
+  .hero-content {
+    padding: 0 15px;
   }
 }
 
@@ -292,6 +293,11 @@ header {
   .nav-right a {
     font-weight: 400;
   }
+
+  /* HERO */
+  .hero-content {
+    padding: 0 15px;
+  }
 }
 
 /* 📲 Tablets */
@@ -310,5 +316,10 @@ header {
   }
   .nav-right a {
     font-weight: 400;
+  }
+
+  /* HERO */
+  .hero-content {
+    padding: 0 15px;
   }
 }

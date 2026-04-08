@@ -42,5 +42,5 @@ nextBtn.addEventListener("click", () => {
     updateCounter(current);
 
     isAnimating = false;
-  }, 500);
+  }, 800);
 });
