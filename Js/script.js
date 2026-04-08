@@ -93,7 +93,7 @@ const heroImagesAnimation = () => {
     // force repaint
     nextImg.offsetHeight;
 
-    // animate down smoothly
+    // Animation down smoothly
     nextImg.style.transition = "transform 0.5s ease-in-out";
     nextImg.style.transform = "translateY(0)";
 
