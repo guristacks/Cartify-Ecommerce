@@ -40,6 +40,10 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
+    <!-- Mobile Hero Image Preload -->
+    <link rel="preload" as="image" href="Images/Hero/hero-1-desk.webp" media="(min-width: 481px)">
+    <link rel="preload" as="image" href="Images/Hero/hero-1-phn.webp" media="(max-width: 480px)">
+
     <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,22 +96,24 @@
             <div class="hero-images">
                 <picture class="hero-img active">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-1-phn.webp" />
-                    <img src="Images/Hero/hero-1-desk.webp" alt="" />
+                    <img fetchpriority="high" src="Images/Hero/hero-1-desk.webp"
+                        alt="Modern ecommerce fashion collection showcase" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-2-phn.webp" />
-                    <img src="Images/Hero/hero-2-desk.webp" alt="" />
+                    <img src="Images/Hero/hero-2-desk.webp" alt="Premium shopping products display" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-3-phn.webp" />
-                    <img style="object-position: bottom;" src="Images/Hero/hero-3-desk.webp" alt="" />
+                    <img style="object-position: bottom;" src="Images/Hero/hero-3-desk.webp"
+                        alt="Stylish online store featured collection" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-4-phn.webp" />
-                    <img src="Images/Hero/hero-4-desk.jpg" alt="" />
+                    <img src="Images/Hero/hero-4-desk.jpg" alt="Trending fashion and lifestyle products" />
                 </picture>
             </div>
             <div class="hero-content flex ac sb">
