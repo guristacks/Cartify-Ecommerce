@@ -127,7 +127,6 @@ header {
   font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   font-weight: 400;
   line-height: 1;
-  padding: 8px 15px;
   display: none;
   color: #fff;
 }
@@ -188,7 +187,6 @@ header {
   font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   font-weight: 700;
   line-height: 1;
-  padding: 8px 15px;
   display: inline-block;
   color: #fff;
   transition: var(--transition);
