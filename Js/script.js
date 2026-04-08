@@ -127,7 +127,7 @@ const mobileNavBarAnimation = () => {
     gsap.to(nav, {
       y: "0%",
       duration: 0.4,
-      ease: "power2.out",
+      ease: "none",
     });
 
     ham.style.display = "none";
@@ -140,7 +140,7 @@ const mobileNavBarAnimation = () => {
     gsap.to(nav, {
       y: "-150%",
       duration: 0.4,
-      ease: "power2.in",
+      ease: "none",
     });
 
     ham.style.display = "flex";
