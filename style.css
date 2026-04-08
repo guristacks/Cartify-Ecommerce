@@ -55,7 +55,7 @@ body {
 .sb {
   justify-content: space-between;
 }
-.sc {
+.jc {
   justify-content: center;
 }
 .ac {
@@ -130,12 +130,10 @@ header {
   display: none;
   color: #fff;
 }
-
 .logo {
   font-size: clamp(1.5rem, 2.5vw, 1.8rem);
   font-weight: 700;
   line-height: 1;
-  padding: 8px 15px;
   display: inline-block;
   color: #fff;
 }
@@ -229,11 +227,8 @@ header {
   top: 50%;
   left: 0;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 20px;
   transform: translateY(-50%);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: #fff;
   z-index: 5;
 }
@@ -246,9 +241,18 @@ header {
 #nextBtn {
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: var(--orange);
   font-size: 16px;
   padding: 0px;
+  text-decoration: underline;
+}
+.hero-content-btm {
+  position: absolute;
+  bottom: 5vh;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 5;
 }
 
 /* 📱 Small Mobile */
