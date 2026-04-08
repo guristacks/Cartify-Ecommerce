@@ -126,7 +126,7 @@ const mobileNavBarAnimation = () => {
 
     gsap.to(nav, {
       y: "0%",
-      duration: 0.3,
+      duration: 0.1,
       ease: "none",
     });
 
@@ -139,7 +139,7 @@ const mobileNavBarAnimation = () => {
 
     gsap.to(nav, {
       y: "-150%",
-      duration: 0.3,
+      duration: 0.1,
       ease: "none",
     });
 
