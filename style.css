@@ -76,7 +76,7 @@ section {
   color: #fff;
 }
 h1 {
-  font-size: clamp(2rem, 6vw, 6.25rem);
+  font-size: clamp(3rem, 6vw, 6.25rem);
   line-height: 1.2;
 }
 h2 {
@@ -224,6 +224,16 @@ header {
 }
 .hero-content {
   position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  color: #fff;
+  z-index: 5;
+}
+.hero-content-1 {
+  position: absolute;
   top: 50%;
   left: 0;
   width: 100%;
@@ -232,10 +242,14 @@ header {
   color: #fff;
   z-index: 5;
 }
+.hero-content-1 h1 {
+  text-align: center;
+  color: #ffffffd1;
+}
 .hero-content span {
   cursor: pointer;
   background: transparent;
-  color: var(--orange);
+  color: #fff;
   font-size: 16px;
 }
 #nextBtn {
@@ -251,7 +265,7 @@ header {
   bottom: 5vh;
   left: 0;
   width: 100%;
-  color: #E64010;
+  color: #fff;
   z-index: 5;
 }
 
