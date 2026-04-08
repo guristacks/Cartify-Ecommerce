@@ -235,7 +235,7 @@ header {
 .hero-content span {
   cursor: pointer;
   background: transparent;
-  color: #fff;
+  color: var(--orange);
   font-size: 16px;
 }
 #nextBtn {
@@ -251,7 +251,7 @@ header {
   bottom: 5vh;
   left: 0;
   width: 100%;
-  color: #fff;
+  color: #E64010;
   z-index: 5;
 }
 
