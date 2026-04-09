@@ -171,8 +171,32 @@ const mobileNavBarAnimation = () => {
   });
 };
 
+
+const brandsAnimation = () => {
+  if (window.innerWidth > 1024) {
+    gsap.to(".track", {
+      x: "-100%",
+      duration: 40,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  } else if (window.innerWidth < 768) {
+    gsap.to(".track", {
+      x: "-100%",
+      duration: 50,
+      repeat: -1,
+      yoyo: true,
+      ease: "none",
+    });
+  }
+};
+
+
 lenisAnimation();
 
 heroImagesAnimation();
 
 mobileNavBarAnimation();
+
+brandsAnimation();
