@@ -1,39 +1,39 @@
-# 🚀 NexaWave Agency
+# 🛒 Cartify Ecommerce
 
-NexaWave Agency is a modern and dynamic **multi-page website** designed for a software and digital agency.  
-This project features a clean UI, smooth animations, and a strong visual hierarchy to create a professional and engaging user experience.
+Cartify Ecommerce is a modern and dynamic **multi-page ecommerce website** designed for an online shopping brand.  
+This project features a clean UI, smooth animations, and a strong visual hierarchy to create a professional and engaging shopping experience.
 
-The website includes multiple pages such as Home, About and Contact — making it a complete agency-style web experience rather than just a landing page.
-
-**View Live Site** 🔗 https://nexa-wave-agency.vercel.app/
+**View Live Site** 🔗 https://your-live-link-here.com
 
 ---
 
 ## ⭐ Disclaimer
 
-This project is created for educational and portfolio purposes only.
-It is not associated with any real agency.
+This project is created for educational purposes only.  
+It is not associated with any real ecommerce brand.
 
 ---
 
 ## 🎯 Project Purpose
 
-This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance multi-page websites.
+This project is created as a portfolio piece to showcase frontend development skills, UI/UX design sense, and the ability to build modern, high-performance ecommerce websites.
 
 ---
 
 ## 📄 Pages Included
 
 - 🏠 Home  
-- 👤 About 
+- 👾 About  
+- 🛍️ Shop  
+- 🛒 Cart  
 - 📩 Contact  
 
 ---
 
 ## 📌 Features & ⚡ Optimization Techniques
 
-- 💎 Luxury and premium UI design  
-- 🎨 Clean and modern layout  
+- 💎 Modern and premium ecommerce UI design  
+- 🎨 Clean and conversion-focused layout  
 - 📱 Fully responsive (Mobile, Tablet, Desktop)  
 - 🖼️ Images optimized using modern formats (WebP)  
 - ⚡ Lazy loading implemented for images and media  
