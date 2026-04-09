@@ -286,6 +286,7 @@ header {
 footer {
   height: fit-content;
   padding: 50px 0px;
+  padding-bottom: 10px;
 }
 .feet-row {
   align-items: flex-start;
@@ -301,7 +302,7 @@ footer {
   text-align: left;
   color: #000;
 }
-.left-feet p{
+.left-feet p {
   color: #686868;
 }
 .center-feet {
@@ -316,6 +317,9 @@ footer {
   display: inline-block;
   color: #686868;
 }
+.feet-links li a:hover {
+  color: blue;
+}
 .right-feet {
   width: 30%;
   text-align: right;
@@ -326,6 +330,32 @@ footer {
   gap: var(--gap20);
   color: #686868;
 }
+.social-links svg {
+  transition: var(--transition);
+  cursor: pointer;
+}
+.social-links svg:hover {
+  color: blue;
+  transform: scale(1.1);
+}
+.copyright-notice {
+  margin-top: 30px;
+  padding: 20px 0px;
+  border-top: 1px solid #686868;
+}
+.notice-row p {
+  color: #000;
+}
+.guri {
+  color: blue !important;
+  text-decoration: underline;
+}
+.guri:hover {
+  color: blue !important;
+  text-decoration: underline;
+}
+
+
 
 /* 📱 Small Mobile */
 @media (max-width: 480px) {
@@ -397,7 +427,9 @@ footer {
     flex-direction: column;
     gap: var(--gap30);
   }
-  .left-feet, .center-feet, .right-feet{
+  .left-feet,
+  .center-feet,
+  .right-feet {
     width: 100%;
     align-items: flex-start;
   }
