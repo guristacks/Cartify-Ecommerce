@@ -282,6 +282,43 @@ header {
   z-index: 5;
 }
 
+/* SECTION - 2 TRUSTED BRANDS */
+.trusted-brands {
+  padding: 50px 0px;
+  text-align: center;
+  height: fit-content;
+  display: block;
+}
+.outter {
+  position: relative;
+  overflow: hidden;
+  width: 80vw;
+  margin: auto;
+  padding: 0px 30px;
+}
+.track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  position: relative;
+}
+.inner {
+  flex-shrink: 0;
+}
+.inner i {
+  margin-right: 5px;
+  font-size: 20px;
+}
+.inner h3 {
+  color: #000;
+}
+.inner h3:nth-child(2),
+.inner h3:nth-child(4),
+.inner h3:nth-child(6),
+.inner h3:nth-child(8) {
+  font-weight: 400;
+}
+
 /* FOOTER */
 footer {
   height: fit-content;
@@ -354,8 +391,6 @@ footer {
   color: blue !important;
   text-decoration: underline;
 }
-
-
 
 /* 📱 Small Mobile */
 @media (max-width: 480px) {
