@@ -72,7 +72,7 @@
                     <a href="index.html" class="logo"> Cartify </a>
                 </div>
 
-                <ul class="nav-links flex ac">
+                <ul role="list" class="nav-links flex ac">
                     <li class="home-link"><a href="#">Home</a></li>
                     <li class="about-link"><a href="#">About</a></li>
                     <li class="shop-link"><a href="#">Shop</a></li>
@@ -97,36 +97,39 @@
             <div class="hero-images">
                 <picture class="hero-img active">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-1-phn.webp" />
-                    <img fetchpriority="high" src="Images/Hero/hero-1-desk.webp"
-                        alt="Modern ecommerce fashion collection showcase" />
+                    <img fetchpriority="high" src="Images/Hero/hero-1-desk.webp" width="1920" height="1080"
+                        sizes="100vw" alt="Modern ecommerce fashion collection showcase" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-2-phn.webp" />
-                    <img loading="lazy" src="Images/Hero/hero-2-desk.webp" alt="Premium shopping products display" />
+                    <img loading="lazy" src="Images/Hero/hero-2-desk.webp" width="1920" height="1080" sizes="100vw"
+                        alt="Premium shopping products display" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-3-phn.webp" />
-                    <img loading="lazy" style="object-position: bottom;" src="Images/Hero/hero-3-desk.webp"
-                        alt="Stylish online store featured collection" />
+                    <img loading="lazy" style="object-position: bottom;" src="Images/Hero/hero-3-desk.webp" width="1920"
+                        height="1080" sizes="100vw" alt="Stylish online store featured collection" />
                 </picture>
 
                 <picture class="hero-img">
                     <source media="(max-width: 480px)" srcset="Images/Hero/hero-4-phn.webp" />
-                    <img loading="lazy" src="Images/Hero/hero-4-desk.jpg"
+                    <img loading="lazy" src="Images/Hero/hero-4-desk.jpg" width="1920" height="1080" sizes="100vw"
                         alt="Trending fashion and lifestyle products" />
                 </picture>
             </div>
+
             <div class="hero-content flex ac sb">
                 <span id="count"><em>01</em></span>
                 <button id="nextBtn"><em>Next >></em></button>
             </div>
+
             <div class="hero-content-1 f-clmn flex ac jc">
                 <h1>Explore Our Latest Collection</h1>
                 <button>Shop Now</button>
-
             </div>
+
             <div class="hero-content-btm flex f-clmn ac jc">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="#fff">
                     <path
@@ -143,34 +146,34 @@
                 <div class="outter flex ac">
                     <div class="track flex ac">
                         <div class="inner flex ac">
-                            <h3><b>Veloura Clothing</b></h3>
+                            <p><b>Veloura Clothing</b></p>
                         </div>
 
                         <div class="inner flex ac">
-                            <h3>UrbanThread</h3>
+                            <p>UrbanThread</p>
                         </div>
 
                         <div class="inner flex ac">
-                            <h3><b>LuxeWear Co.</b></h3>
+                            <p><b>LuxeWear Co.</b></p>
                         </div>
 
                         <div class="inner flex ac">
-                            <h3>NovaStyle</h3>
+                            <p>NovaStyle</p>
                         </div>
                         <div class="inner flex ac">
-                            <h3><b>ModeHaus</b></h3>
-                        </div>
-
-                        <div class="inner flex ac">
-                            <h3>Aether Apparel</h3>
+                            <p><b>ModeHaus</b></p>
                         </div>
 
                         <div class="inner flex ac">
-                            <h3><b>StreetNova</b></h3>
+                            <p>Aether Apparel</p>
                         </div>
 
                         <div class="inner flex ac">
-                            <h3>Elite Stitch</h3>
+                            <p><b>StreetNova</b></p>
+                        </div>
+
+                        <div class="inner flex ac">
+                            <p>Elite Stitch</p>
                         </div>
                     </div>
                 </div>
@@ -194,12 +197,12 @@
         <!-- SECTION - 4 TRENDING PRODUCTS -->
         <section class="trending-products">
             <div class="container">
-                <h2>OUR MOST <br> POPULAR ARTICALS</h2>
+                <h2>OUR MOST <br> POPULAR ARTICLES</h2>
 
                 <div class="product-grid">
                     <div class="product-card big">
                         <div class="product-content flex f-clmn">
-                            <h4>Our Vintage Suits</h4>
+                            <h3>Our Vintage Suits</h3>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum corporis inventore
                                 voluptatem fugiat hic sed reprehenderit</p>
                             <button>Explore Now !</button>
@@ -209,7 +212,7 @@
                     <div class="right-column">
                         <div class="product-card small1">
                             <div class="product-content flex f-clmn">
-                                <h4>Our Best Hoodies</h4>
+                                <h3>Our Best Hoodies</h3>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum corporis inventore
                                     voluptatem fugiat hic sed reprehenderit</p>
                                 <button>Explore Now !</button>
@@ -217,7 +220,7 @@
                         </div>
                         <div class="product-card small2">
                             <div class="product-content flex f-clmn">
-                                <h4>Our Baggy stuff</h4>
+                                <h3>Our Baggy stuff</h3>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum corporis inventore
                                     voluptatem fugiat hic sed reprehenderit</p>
                                 <button>Explore Now !</button>
@@ -319,15 +322,15 @@
     </footer>
 
     <!-- LENIS -->
-    <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js" defer></script>
+    <!-- <script src="https://unpkg.com/lenis@1.3.18/dist/lenis.min.js" defer></script> -->
 
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" crossorigin="anonymous"
         referrerpolicy="no-referrer" defer></script>
 
     <!-- SCROLL TRIGGER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"
-        referrerpolicy="no-referrer" defer></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" crossorigin="anonymous"
+        referrerpolicy="no-referrer" defer></script> -->
 
     <!-- JS FILE -->
     <script src="Js/script.js" defer></script>
