@@ -612,6 +612,10 @@ footer {
     left: 0;
     right: 0;
   }
+  .product-card:hover {
+    opacity: 1;
+    transform: scale(1);
+  }
 
   /* FO0TER */
   .feet-row {
@@ -726,6 +730,10 @@ footer {
     left: 0;
     right: 0;
   }
+  .product-card:hover {
+    opacity: 1;
+    transform: scale(1);
+  }
 
   /* SECTION - 3 CATEGORIES */
   .categories-grid {
@@ -826,5 +834,9 @@ footer {
     height: 100%;
     left: 0;
     right: 0;
+  }
+  .product-card:hover {
+    opacity: 1;
+    transform: scale(1);
   }
 }
