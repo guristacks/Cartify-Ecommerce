@@ -78,8 +78,7 @@ span {
 }
 section {
   user-select: none;
-  min-height: 100vh;
-  color: #fff;
+  color: #000000;
 }
 h1 {
   font-size: clamp(3rem, 6vw, 6.25rem);
@@ -319,9 +318,58 @@ header {
   font-weight: 400;
 }
 
+/* SECTION - 3 CATEGORIES */
+.featured-categories{
+  height: fit-content;
+  padding: 50px 0px;
+  padding-top: 0px;
+}
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.category-card {
+  padding: 40px 20px;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 12px;
+  font-weight: 600;
+}
+.Cat-1{
+  background-image: url(Images/Categories-Sec/new-arrivals.webp);
+  background-position: bottom;
+  background-size: cover;
+}
+.Cat-2{
+  background-image: url(Images/Categories-Sec/mens.webp);
+  background-position: center;
+  background-size: cover;
+}
+.Cat-3{
+  background-image: url(Images/Categories-Sec/women.webp);
+  background-position: top;
+  background-size: cover;
+}
+.Cat-4{
+  background-image: url(Images/Categories-Sec/streetwear.webp);
+  background-position: center;
+  background-size: cover;
+}
+.Cat-5{
+  background-image: url(Images/Categories-Sec/accessories.webp);
+  background-position: center;
+  background-size: cover;
+}
+.Cat-6{
+  background-image: url(Images/Categories-Sec/sale.webp);
+  background-position: top;
+  background-size: cover;
+}
+
 /* FOOTER */
 footer {
-  height: fit-content;
   padding: 50px 0px;
   padding-bottom: 10px;
 }
@@ -376,9 +424,13 @@ footer {
   transform: scale(1.1);
 }
 .copyright-notice {
+  width:100%;
   margin-top: 30px;
   padding: 20px 0px;
   border-top: 1px solid #686868;
+}
+.notice-row{
+  width:100%;
 }
 .notice-row p {
   color: #000;
@@ -457,6 +509,11 @@ footer {
     padding: 0 15px;
   }
 
+  /* SECTION - 3 CATEGORIES */
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
   /* FO0TER */
   .feet-row {
     flex-direction: column;
@@ -533,6 +590,11 @@ footer {
   .hero-content {
     padding: 0 15px;
   }
+
+  /* SECTION - 3 CATEGORIES */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 📲 Tablets */
@@ -597,5 +659,10 @@ footer {
   /* HERO */
   .hero-content {
     padding: 0 15px;
+  }
+
+  /* SECTION - 3 CATEGORIES */
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }

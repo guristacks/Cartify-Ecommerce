@@ -171,11 +171,10 @@ const mobileNavBarAnimation = () => {
   });
 };
 
-
 const brandsAnimation = () => {
   if (window.innerWidth > 1024) {
     gsap.to(".track", {
-      x: "-100%",
+      x: "-85%",
       duration: 40,
       repeat: -1,
       yoyo: true,
