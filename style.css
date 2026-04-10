@@ -47,7 +47,6 @@ body {
 }
 .flex {
   display: flex;
-  align-items: center;
 }
 .f-clmn {
   flex-direction: column;
@@ -226,6 +225,12 @@ header {
   z-index: 1;
   will-change: transform;
 }
+.hero-img:not(.active) {
+  visibility: hidden;
+}
+.hero-img.active {
+  visibility: visible;
+}
 .hero-img img {
   width: 100%;
   height: 100%;
@@ -303,6 +308,7 @@ header {
   gap: 40px;
   width: max-content;
   position: relative;
+  will-change: transform;
 }
 .inner {
   flex-shrink: 0;
@@ -311,13 +317,14 @@ header {
   margin-right: 5px;
   font-size: 20px;
 }
-.inner h3 {
+.inner p {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
   color: #000;
 }
-.inner h3:nth-child(2),
-.inner h3:nth-child(4),
-.inner h3:nth-child(6),
-.inner h3:nth-child(8) {
+.inner p:nth-child(2),
+.inner p:nth-child(4),
+.inner p:nth-child(6),
+.inner p:nth-child(8) {
   font-weight: 400;
 }
 
@@ -412,6 +419,9 @@ header {
   transition: var(--transition);
   cursor: pointer;
 }
+.product-card h3 {
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
+}
 .small1 {
   background-image: url(Images/Trending-Sec/trend-2.webp);
   background-size: cover;
@@ -462,6 +472,7 @@ footer {
   width: 30%;
   text-align: left;
   gap: var(--gap20);
+  align-items: center;
 }
 .feet-links li a {
   font-weight: 500;
@@ -516,70 +527,10 @@ footer {
   text-decoration: underline;
 }
 
-/* 📱 Small Mobile */
+/* Small Mobile */
 @media (max-width: 480px) {
-  /* HEADER */
-  .navbar {
-    text-align: center;
-  }
-  .nav-right a {
-    font-weight: 400;
-  }
-  .ham {
-    display: flex;
-  }
-  header {
-    background: #000000;
-    padding: 0px 15px;
-    width: 100%;
-    margin: auto;
-    box-shadow: unset;
-    height: 3.5rem;
-    top: 0px;
-    border-radius: 0px;
-  }
-  .nav-links {
-    background: #000000;
-    backdrop-filter: unset;
-    padding: 50px 0;
-    position: absolute;
-    box-shadow: unset;
-    top: 55px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    gap: var(--gap40);
-    border-radius: 0px;
-    transform: translateY(-150%);
-  }
-  .nav-links li a {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 0;
-    color: #fff;
-  }
-  .nav-links li:hover {
-    background-color: unset;
-    box-shadow: unset;
-  }
-  .nav-links li a:hover {
-    color: #ffffff;
-  }
-  .home-link {
-    background-color: unset;
-    backdrop-filter: unset;
-    box-shadow: unset;
-  }
-  .home-link a {
-    color: #ffffff !important;
-  }
-
   /* HERO */
-  .hero-content {
-    padding: 0 15px;
-  }
+
   .hero-content-1 {
     position: absolute;
     top: 60%;
@@ -598,16 +549,6 @@ footer {
   }
 
   /* SECTION - 4 TRENDING */
-  .product-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .small1 {
-    background-image: url(Images/Trending-Sec/trend-2-phn.webp);
-    background-size: cover;
-    background-position: center;
-  }
   .product-card {
     color: #fff;
     padding: 15px;
@@ -620,10 +561,6 @@ footer {
     height: 100%;
     left: 0;
     right: 0;
-  }
-  .product-card:hover {
-    opacity: 1;
-    transform: scale(1);
   }
 
   /* FO0TER */
@@ -639,70 +576,10 @@ footer {
   }
 }
 
-/* 📱 Large Mobile */
+/* Large Mobile */
 @media (min-width: 481px) and (max-width: 767px) {
-  /* HEADER */
-  .navbar {
-    text-align: center;
-  }
-  .nav-right a {
-    font-weight: 400;
-  }
-  .ham {
-    display: flex;
-  }
-  header {
-    background: #000000;
-    padding: 0px 15px;
-    width: 100%;
-    margin: auto;
-    box-shadow: unset;
-    height: 3.5rem;
-    top: 0px;
-    border-radius: 0px;
-  }
-  .nav-links {
-    background: #000000;
-    backdrop-filter: unset;
-    padding: 50px 0;
-    position: absolute;
-    box-shadow: unset;
-    top: 55px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    gap: var(--gap40);
-    border-radius: 0px;
-    transform: translateY(-150%);
-  }
-  .nav-links li a {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 0;
-    color: #fff;
-  }
-  .nav-links li:hover {
-    background-color: unset;
-    box-shadow: unset;
-  }
-  .nav-links li a:hover {
-    color: #ffffff;
-  }
-  .home-link {
-    background-color: unset;
-    backdrop-filter: unset;
-    box-shadow: unset;
-  }
-  .home-link a {
-    color: #ffffff !important;
-  }
-
   /* HERO */
-  .hero-content {
-    padding: 0 15px;
-  }
+
   .hero-content-1 {
     position: absolute;
     top: 60%;
@@ -716,16 +593,6 @@ footer {
   }
 
   /* SECTION - 4 TRENDING */
-  .product-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .small1 {
-    background-image: url(Images/Trending-Sec/trend-2-phn.webp);
-    background-size: cover;
-    background-position: center;
-  }
   .product-card {
     color: #fff;
     padding: 15px;
@@ -739,10 +606,6 @@ footer {
     left: 0;
     right: 0;
   }
-  .product-card:hover {
-    opacity: 1;
-    transform: scale(1);
-  }
 
   /* SECTION - 3 CATEGORIES */
   .categories-grid {
@@ -750,87 +613,14 @@ footer {
   }
 }
 
-/* 📲 Tablets */
+/* Tablets */
 @media (min-width: 768px) and (max-width: 1023px) {
-  /* HEADER */
-  .navbar {
-    text-align: center;
-  }
-  .nav-right a {
-    font-weight: 400;
-  }
-  .ham {
-    display: flex;
-  }
-  header {
-    background: #000000;
-    padding: 0px 15px;
-    width: 100%;
-    margin: auto;
-    box-shadow: unset;
-    height: 3.5rem;
-    top: 0px;
-    border-radius: 0px;
-  }
-  .nav-links {
-    background: #000000;
-    backdrop-filter: unset;
-    padding: 50px 0;
-    position: absolute;
-    box-shadow: unset;
-    top: 55px;
-    left: 0;
-    right: 0;
-    width: 100%;
-    flex-direction: column;
-    gap: var(--gap40);
-    border-radius: 0px;
-    transform: translateY(-150%);
-  }
-  .nav-links li a {
-    display: inline-block;
-    font-size: 25px;
-    font-weight: 500;
-    padding: 0;
-    color: #fff;
-  }
-  .nav-links li:hover {
-    background-color: unset;
-    box-shadow: unset;
-  }
-  .nav-links li a:hover {
-    color: #ffffff;
-  }
-  .home-link {
-    background-color: unset;
-    backdrop-filter: unset;
-    box-shadow: unset;
-  }
-  .home-link a {
-    color: #ffffff !important;
-  }
-
-  /* HERO */
-  .hero-content {
-    padding: 0 15px;
-  }
-
   /* SECTION - 3 CATEGORIES */
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
   /* SECTION - 4 TRENDING */
-  .product-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  .small1 {
-    background-image: url(Images/Trending-Sec/trend-2-phn.webp);
-    background-size: cover;
-    background-position: center;
-  }
   .product-card {
     color: #fff;
     padding: 15px;
@@ -844,6 +634,91 @@ footer {
     left: 0;
     right: 0;
   }
+}
+
+@media (max-width: 1023px) {
+  /* Header */
+
+  .navbar {
+    text-align: center;
+  }
+
+  .nav-links li:hover {
+    background-color: unset;
+    box-shadow: unset;
+  }
+
+  .nav-links li a:hover {
+    color: #ffffff;
+  }
+
+  .home-link {
+    background-color: unset;
+    backdrop-filter: unset;
+    box-shadow: unset;
+  }
+
+  .nav-right a {
+    font-weight: 400;
+  }
+
+  .ham {
+    display: flex;
+  }
+
+  .nav-links li a {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0;
+    color: #fff;
+  }
+
+  header {
+    background: #000;
+    padding: 0 15px;
+    height: 3.5rem;
+    top: 0;
+  }
+
+  .nav-links {
+    background: #000;
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    border-radius: 0px;
+    width: 100%;
+    flex-direction: column;
+    padding: 40px 0px;
+    box-shadow: unset;
+    gap: var(--gap40);
+    transform: translateY(-150%);
+  }
+
+  .home-link a {
+    color: #ffffff !important;
+  }
+
+  /* SECTION - 1 HERO */
+
+  .hero-content {
+    padding: 0 15px;
+  }
+
+  /* SECTION - 4 TRENDING PRODUCTS */
+
+  .product-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .small1 {
+    background-image: url(Images/Trending-Sec/trend-2-phn.webp);
+    background-size: cover;
+    background-position: center;
+  }
+
   .product-card:hover {
     opacity: 1;
     transform: scale(1);
