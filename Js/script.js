@@ -1,67 +1,67 @@
 // GSAP Timeline & Scroll Trigger
-let tl = gsap.timeline();
-gsap.registerPlugin(ScrollTrigger);
+// let tl = gsap.timeline();
+// gsap.registerPlugin(ScrollTrigger);
 
-const onPress = (el, handler) => {
-  if (!el) return;
-  el.addEventListener("click", handler);
-  el.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") {
-      e.preventDefault();
-      handler(e);
-    }
-  });
-};
+// const onPress = (el, handler) => {
+//   if (!el) return;
+//   el.addEventListener("click", handler);
+//   el.addEventListener("keydown", (e) => {
+//     if (e.key === "Enter" || e.key === " ") {
+//       e.preventDefault();
+//       handler(e);
+//     }
+//   });
+// };
 
-const debounce = (fn, wait = 150) => {
-  let t;
-  return (...args) => {
-    clearTimeout(t);
-    t = setTimeout(() => fn(...args), wait);
-  };
-};
+// const debounce = (fn, wait = 150) => {
+//   let t;
+//   return (...args) => {
+//     clearTimeout(t);
+//     t = setTimeout(() => fn(...args), wait);
+//   };
+// };
 
-const lenisAnimation = () => {
-  let lenis;
-  let rafFn;
+// const lenisAnimation = () => {
+//   let lenis;
+//   let rafFn;
 
-  const initLenis = () => {
-    if (window.innerWidth > 1024 && !lenis) {
-      lenis = new Lenis({ duration: 2 });
+//   const initLenis = () => {
+//     if (window.innerWidth > 1024 && !lenis) {
+//       lenis = new Lenis({ duration: 2 });
 
-      lenis.on("scroll", ScrollTrigger.update);
+//       lenis.on("scroll", ScrollTrigger.update);
 
-      rafFn = (time) => {
-        lenis.raf(time * 1000);
-      };
+//       rafFn = (time) => {
+//         lenis.raf(time * 1000);
+//       };
 
-      gsap.ticker.add(rafFn);
-      gsap.ticker.lagSmoothing(0);
-    }
-  };
+//       gsap.ticker.add(rafFn);
+//       gsap.ticker.lagSmoothing(0);
+//     }
+//   };
 
-  const destroyLenis = () => {
-    if (lenis) {
-      gsap.ticker.remove(rafFn);
-      lenis.destroy();
-      lenis = null;
-    }
-  };
+//   const destroyLenis = () => {
+//     if (lenis) {
+//       gsap.ticker.remove(rafFn);
+//       lenis.destroy();
+//       lenis = null;
+//     }
+//   };
 
-  initLenis();
+//   initLenis();
 
-  window.addEventListener(
-    "resize",
-    debounce(() => {
-      if (window.innerWidth > 1024) {
-        initLenis();
-      } else {
-        destroyLenis();
-      }
-    }, 200),
-    { passive: true },
-  );
-};
+//   window.addEventListener(
+//     "resize",
+//     debounce(() => {
+//       if (window.innerWidth > 1024) {
+//         initLenis();
+//       } else {
+//         destroyLenis();
+//       }
+//     }, 200),
+//     { passive: true },
+//   );
+// };
 
 const heroImagesAnimation = () => {
   const images = document.querySelectorAll(".hero-img");
@@ -191,7 +191,7 @@ const brandsAnimation = () => {
   }
 };
 
-lenisAnimation();
+// lenisAnimation();
 
 heroImagesAnimation();
 
