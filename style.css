@@ -112,9 +112,11 @@ button {
   border: unset;
   padding: 10px 20px;
   transition: var(--transition);
+  box-shadow: 3px 3px 10px -4px;
+  cursor: pointer;
 }
 button:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 /* HEADER */
@@ -190,7 +192,7 @@ header {
   color: #fff;
 }
 .nav-links li:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 .nav-right a {
   font-size: clamp(1.5rem, 2.5vw, 1.8rem);
@@ -201,7 +203,7 @@ header {
   transition: var(--transition);
 }
 .nav-right a:active {
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 
 /* HERO */
@@ -487,6 +489,10 @@ footer {
 .social-links svg:hover {
   color: blue;
   transform: scale(1.1);
+  transition: var(--transition);
+}
+.social-links svg:active {
+  transform: scale(0.8);
 }
 .copyright-notice {
   width: 100%;
