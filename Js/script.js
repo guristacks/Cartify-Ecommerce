@@ -191,7 +191,6 @@ const brandsAnimation = () => {
   }
 };
 
-
 lenisAnimation();
 
 heroImagesAnimation();
