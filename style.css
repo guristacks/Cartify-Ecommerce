@@ -610,7 +610,7 @@ footer {
   .product-card {
     color: #fff;
     padding: 15px;
-    min-height: 550px;
+    min-height: 680px;
     display: flex;
     align-items: flex-end;
     position: sticky;
