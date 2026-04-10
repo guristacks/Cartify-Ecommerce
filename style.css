@@ -259,6 +259,7 @@ header {
 .hero-content-1 h1 {
   text-align: center;
   color: #ffffffd1;
+  text-shadow: 1px 1px 10px #0000008a;
 }
 .hero-content span {
   cursor: pointer;
@@ -533,7 +534,7 @@ footer {
     width: 100%;
     margin: auto;
     box-shadow: unset;
-    height: 3.6rem;
+    height: 3.5rem;
     top: 0px;
     border-radius: 0px;
   }
@@ -656,7 +657,7 @@ footer {
     width: 100%;
     margin: auto;
     box-shadow: unset;
-    height: 3.6rem;
+    height: 3.5rem;
     top: 0px;
     border-radius: 0px;
   }
@@ -767,7 +768,7 @@ footer {
     width: 100%;
     margin: auto;
     box-shadow: unset;
-    height: 3.6rem;
+    height: 3.5rem;
     top: 0px;
     border-radius: 0px;
   }
