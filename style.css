@@ -106,11 +106,10 @@ img {
   display: block;
 }
 button {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--bg);
+  color: #000000;
   font-size: 16px;
   border: unset;
-  border-radius: var(--radius);
   padding: 10px 20px;
   transition: var(--transition);
 }
@@ -252,6 +251,7 @@ header {
   padding: 0 20px;
   transform: translateY(-50%);
   color: #fff;
+  gap: var(--gap40);
   z-index: 5;
 }
 .hero-content-1 h1 {
