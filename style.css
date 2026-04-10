@@ -319,7 +319,7 @@ header {
 }
 
 /* SECTION - 3 CATEGORIES */
-.featured-categories{
+.featured-categories {
   height: fit-content;
   padding: 50px 0px;
   padding-top: 0px;
@@ -337,32 +337,32 @@ header {
   border-radius: 12px;
   font-weight: 600;
 }
-.Cat-1{
+.Cat-1 {
   background-image: url(Images/Categories-Sec/new-arrivals.webp);
   background-position: bottom;
   background-size: cover;
 }
-.Cat-2{
+.Cat-2 {
   background-image: url(Images/Categories-Sec/mens.webp);
   background-position: center;
   background-size: cover;
 }
-.Cat-3{
+.Cat-3 {
   background-image: url(Images/Categories-Sec/women.webp);
   background-position: top;
   background-size: cover;
 }
-.Cat-4{
+.Cat-4 {
   background-image: url(Images/Categories-Sec/streetwear.webp);
   background-position: center;
   background-size: cover;
 }
-.Cat-5{
+.Cat-5 {
   background-image: url(Images/Categories-Sec/accessories.webp);
   background-position: center;
   background-size: cover;
 }
-.Cat-6{
+.Cat-6 {
   background-image: url(Images/Categories-Sec/sale.webp);
   background-position: top;
   background-size: cover;
@@ -424,13 +424,13 @@ footer {
   transform: scale(1.1);
 }
 .copyright-notice {
-  width:100%;
+  width: 100%;
   margin-top: 30px;
   padding: 20px 0px;
   border-top: 1px solid #686868;
 }
-.notice-row{
-  width:100%;
+.notice-row {
+  width: 100%;
 }
 .notice-row p {
   color: #000;
@@ -507,6 +507,17 @@ footer {
   /* HERO */
   .hero-content {
     padding: 0 15px;
+  }
+  .hero-content-1 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    gap: var(--gap40);
+    z-index: 5;
   }
 
   /* SECTION - 3 CATEGORIES */
@@ -589,6 +600,17 @@ footer {
   /* HERO */
   .hero-content {
     padding: 0 15px;
+  }
+  .hero-content-1 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    gap: var(--gap40);
+    z-index: 5;
   }
 
   /* SECTION - 3 CATEGORIES */
