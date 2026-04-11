@@ -446,6 +446,39 @@ header {
   opacity: 0.9;
 }
 
+/* SECTION - 9 INSTA / GALLERY FEED */
+.insta-galleryFeed{
+  display: block;
+  padding: 50px 0px;
+}
+.gallery {
+  overflow: hidden;
+  width: 100%;
+}
+.gallery-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.gallery:hover .gallery-track {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* FOOTER */
 footer {
   padding: 50px 0px;
