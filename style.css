@@ -446,8 +446,57 @@ header {
   opacity: 0.9;
 }
 
+/* SECTION - 8 TESTIMONIALS */
+.customers-testimonials{
+  padding: 50px 0px;
+  text-align: center;
+}
+.customers-testimonials h2 {
+  margin-bottom: 50px;
+}
+.test-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.box {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 15px;
+  color: #fff;
+  transition: 0.3s ease;
+  text-align: left;
+}
+.box:hover {
+  transform: translateY(-5px);
+}
+.stars {
+  color: goldenrod;
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+.box p {
+  color: var(--offwhite);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.user {
+  gap: 10px;
+}
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user span {
+  font-weight: 500;
+}
+
 /* SECTION - 9 INSTA / GALLERY FEED */
-.insta-galleryFeed{
+.insta-galleryFeed {
   display: block;
   padding: 50px 0px;
   text-align: center;
@@ -598,6 +647,11 @@ footer {
     height: 100%;
     left: 0;
     right: 0;
+  }
+
+  /* SECTION - 8 TESTIMONIALS */
+  .test-wrapper {
+    grid-template-columns: 1fr;
   }
 
   /* FO0TER */
