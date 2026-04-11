@@ -450,6 +450,10 @@ header {
 .insta-galleryFeed{
   display: block;
   padding: 50px 0px;
+  text-align: center;
+}
+.insta-galleryFeed h2 {
+  margin-bottom: 50px;
 }
 .gallery {
   overflow: hidden;
