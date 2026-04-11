@@ -499,7 +499,12 @@ header {
   font-size: 30px;
 }
 .new-content p {
-  color: #fff;
+  color: #ffffffdf;
+  font-size: 16px;
+  z-index: 2;
+}
+.price-col p {
+  color: #ffffff;
   font-size: 16px;
   z-index: 2;
 }
@@ -633,6 +638,10 @@ footer {
   text-align: right;
   align-items: end;
   gap: var(--gap20);
+}
+.center-feet h2,
+.right-feet h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.8rem);
 }
 .social-links {
   gap: var(--gap20);
