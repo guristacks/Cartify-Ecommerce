@@ -461,9 +461,9 @@ header {
 }
 .new-products {
   position: relative;
-  height: 550px;
+  height: 500px;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 12px;
   text-align: left;
 }
 .new-products img {
@@ -474,37 +474,32 @@ header {
   top: 0;
   left: 0;
 }
-.new-title {
+.new-content {
   position: absolute;
-  top: 66%;
+  bottom: 0;
   width: 100%;
   padding: 15px;
   z-index: 2;
+  color: #fff;
+  background: #00000024;
+  backdrop-filter: blur(2px);
+  border-radius: 20px 20px 0px 0px;
 }
 .new-title h3 {
   font-size: 20px;
   color: #fff;
 }
 .price-col {
-  position: absolute;
-  bottom: 16%;
-  width: 100%;
-  padding: 0 15px;
-  color: #fff;
-  z-index: 2;
+  margin: 15px 0px;
+  border-top: 1px solid #ffffff37;
+  border-bottom: 1px solid #ffffff37;
 }
 .price-col h4 {
   font-size: 35px;
 }
-.price-col p {
-  color: var(--offwhite);
-}
-.new-products > p {
-  position: absolute;
-  bottom: 5%;
-  padding: 0 15px;
-  color: var(--offwhite);
-  font-size: 13px;
+.new-content p {
+  color: #fff;
+  font-size: 16px;
   z-index: 2;
 }
 
@@ -709,6 +704,15 @@ footer {
     height: 100%;
     left: 0;
     right: 0;
+  }
+
+  /* SECTION - 6 NEW ARRIVALS */
+  .new-products {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    border-radius: 12px;
+    text-align: left;
   }
 
   /* SECTION - 8 TESTIMONIALS */
