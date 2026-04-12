@@ -496,8 +496,8 @@ header {
 .new-products {
   position: relative;
   height: 500px;
+  margin: 10px;
   overflow: hidden;
-  border-radius: 12px;
   text-align: left;
 }
 .new-products img {
@@ -518,10 +518,9 @@ header {
   color: #fff;
   background: #00000024;
   backdrop-filter: blur(2px);
-  border-radius: 20px 20px 0px 0px;
 }
 .new-title h3 {
-  font-size: 20px;
+  font-size: 15px;
   color: #fff;
 }
 .price-col {
@@ -530,11 +529,11 @@ header {
   border-bottom: 1px solid #ffffff37;
 }
 .price-col h4 {
-  font-size: 30px;
+  font-size: 25px;
 }
 .new-content p {
   color: #ffffffdf;
-  font-size: 16px;
+  font-size: 14px;
   z-index: 2;
 }
 .price-col p {
@@ -765,8 +764,11 @@ footer {
     position: relative;
     height: 600px;
     overflow: hidden;
-    border-radius: 12px;
     text-align: left;
+    margin: 10px;
+  }
+  .arrival-wrapper {
+    gap: 40px;
   }
 
   /* SECTION - 8 TESTIMONIALS */
@@ -832,6 +834,18 @@ footer {
     padding: 20px opx;
   }
 
+  /* SECTION - 6 NEW PRODUCTS */
+  .new-products {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    text-align: left;
+    margin: 10px;
+  }
+  .arrival-wrapper {
+    gap: 40px;
+  }
+
   /* SECTION - 8 TESTIMONIALS */
   .arrival-wrapper,
   .test-wrapper {
@@ -867,6 +881,15 @@ footer {
   }
   .flascount {
     padding: 20px 0px;
+  }
+
+  /* SECTION - 6 NEW PRODUCTS */
+  .new-products {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    text-align: left;
+    margin: 10px;
   }
 
   /* SECTION - 8 TESTIMONIALS */
