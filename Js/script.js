@@ -191,6 +191,42 @@ const brandsAnimation = () => {
   }
 };
 
+const saletimer = () => {
+  const timerEl = document.getElementById("timer");
+
+  const ONE_DAY = 24 * 60 * 60 * 1000;
+
+  function startTimer() {
+    let startTime = Date.now();
+
+    function updateTimer() {
+      let now = Date.now();
+      let diff = ONE_DAY - (now - startTime);
+
+      // agar time khatam ho gaya toh reset
+      if (diff <= 0) {
+        startTime = Date.now();
+        diff = ONE_DAY;
+      }
+
+      let hours = Math.floor(diff / (1000 * 60 * 60));
+      let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      timerEl.innerText =
+        String(hours).padStart(2, "0") +
+        ":" +
+        String(minutes).padStart(2, "0") +
+        ":" +
+        String(seconds).padStart(2, "0");
+    }
+
+    setInterval(updateTimer, 1000);
+  }
+
+  startTimer();
+};
+
 // lenisAnimation();
 
 heroImagesAnimation();
@@ -198,3 +234,5 @@ heroImagesAnimation();
 mobileNavBarAnimation();
 
 brandsAnimation();
+
+saletimer();
