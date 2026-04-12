@@ -1,9 +1,9 @@
 # 🛒 Cartify Ecommerce
 
-Cartify Ecommerce is a modern and dynamic **multi-page ecommerce website** designed for an online shopping brand.  
+Cartify Ecommerce is a modern and dynamic landing page designed for an online shopping brand.  
 This project features a clean UI, smooth animations, and a strong visual hierarchy to create a professional and engaging shopping experience.
 
-**View Live Site** 🔗 https://your-live-link-here.com
+**View Live Site** 🔗 https://cartify-ecommerce-landing.vercel.app/
 
 ---
 
@@ -20,16 +20,6 @@ This project is created as a portfolio piece to showcase frontend development sk
 
 ---
 
-## 📄 Pages Included
-
-- 🏠 Home  
-- 👾 About  
-- 🛍️ Shop  
-- 🛒 Cart  
-- 📩 Contact  
-
----
-
 ## 📌 Features & ⚡ Optimization Techniques
 
 - 💎 Modern and premium ecommerce UI design  
@@ -40,7 +30,7 @@ This project is created as a portfolio piece to showcase frontend development sk
 - 📦 Minified CSS and JavaScript files  
 - 🧠 Efficient DOM structure for better rendering  
 - 🚫 Reduced render-blocking resources  
-- 🎯 Optimized animations and smooth scrolling  
+- 🎯 Optimized animations and smooth scrolling
 
 ---
 
